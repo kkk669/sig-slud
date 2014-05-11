@@ -1,5 +1,5 @@
 body {
-  background-color:#f9fff9;
+  background-color:#fefeff;
 
   font-size:12pt;
   color: #393939;
@@ -30,50 +30,96 @@ ul li a:hover {
    padding-left: 2px;
 }
 .head h2 {
-  padding: 12px 0 3px 0;
-  margin:0;
+  padding: 22px 0 10px 0;
+  margin:0px 0;
 }
 .t10b2 {
-  //margin-top: 10px;
   margin: 10px 0 2px 0;
 }
 .content {
-  width:1200px;
-  margin:0 auto;
-  padding-bottom:30px;
+  width:1100px;
+  margin:0 80px;
+  padding: 0 30px 30px;
+  background-color: #fdfdff;
 }
 #side-navigation {
   width: 430px;
   float:right;
   padding-top: 20px;
+  background-color: #edf4ed;
+  border-radius:7px;
 }
 #schedule {
   margin-right:430px;
 }
-#schedule ul {
-  /*border-left: 1px solid red;*/
+#schedule >  ul {
+  border-left: 1px solid #bfd8a9;
+  /*
+  margin-left: 8px;
+  */
+  margin: 0 0 16px 8px;
+  padding: 16px 0 4px 63px;
 }
+#schedule ul ul{
+  margin: -8px 0 12px 15px;
+  padding-left: 24px;
+}
+#schedule ul ul li {
+  margin: 0 -495px 10px 0;
+  list-style: circle;
+}
+/*
+.a {
+  margin: -5px 0 12px 0;
+  padding-left:24px;
+}
+.b {
+  margin: 0px -495px 10px 0px;
+  white-space: normal;
+  margin:0 0 6px;
+}
+*/
 #schedule .accordion:nth-of-type(n+3) ~ ul {
   display: none;
 }
+.accordion {
+  margin:0 0 3px 0;
+}
 nav ul li {
-  border-bottom: 1px dotted #e3a3a3;
-  padding: 1.5px 5px;
+  padding: 2.5px 5px;
 }
 ul {
-  margin: 1px 0 15px 0;
+  margin: 1px 0 12px 0;
+  padding: 0 0 0 30px;
 }
 ul li {
   list-style: none;
   list-style-position:outside;
   padding:0;
 }
-dl {
-  margin: 1px 0 7px 0;
+ul ul li {
+  list-style: circle;
 }
+dl {
+  padding-left:8px;
+  margin:0 0 16px;
+}
+dt {
+  margin:2px 0 1px;
+}
+/*
+dt:before {
+  content: "日付： "
+}
+*/
 dd {
   margin: 0;
 }
+/*
+dd:before {
+  content: "場所： "
+}
+*/
 hr.style-six {
   border: 0;
   height: 0;
@@ -90,16 +136,12 @@ hr.style-six {
   content: "\f0d7";
   padding-left: 5px;
 }
+/*
 .date {
   height: 1px;
   border: none;
   border-bottom: 1px #000000 dashed;
-  margin-left: -20px;
+  margin:0 0 3px -17px;
   padding:0 30px 0 0;
 }
-.a {
-  margin: 0 0 7px 0;
-}
-.b {
-  margin: -5px -420px 2px -1rem;
-}
+*/

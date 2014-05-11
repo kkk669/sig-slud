@@ -18,7 +18,13 @@ function setModal() {
 	});
  
 	//リンクがクリックされた時にAjaxでコンテンツを読み込む
-	$("a.modal").click(function() {
+	$("a.modal").click(function(event) {
+    event.preventDefault();
+    $.ajaxSetup({
+      beforeSend: function(xhr){
+        xhr.overrideMimeType("text/html; charset=iso-2022-jp");
+      }
+    });
 		$("div#modal div.container").load($(this).attr("href"), data="html", onComplete);
 		return false;
 	});
@@ -36,10 +42,14 @@ function setModal() {
 //モーダルウィンドウを開く
 function displayModal(sign) {
 	if (sign) {
+    var scrolltop = $(window).scrollTop();
+
 		$('div.container').animate({scrollTop: 0}, 1);
 		$("div#modal").fadeIn(500);
+    $('body').addClass('noscroll');
 	} else {
 		$("div#modal").fadeOut(250);
+    $('body').removeClass('noscroll');
 	}
 }
  

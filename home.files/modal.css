@@ -4,6 +4,9 @@ body {
   margin: 0px;
   padding: 0px;
 }
+body.noscroll {
+  overflow: hidden;
+}
 div#modal {
   display: none;
   position: fixed;
