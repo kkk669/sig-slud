@@ -1,0 +1,105 @@
+body {
+  background-color:#f9fff9;
+
+  font-size:12pt;
+  color: #393939;
+  font-family: 'Lucida Grande','Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;
+  margin:0;
+  padding:0;
+}
+a,
+a:link,
+a:hover,
+a:active, 
+a:visited {
+  color: #002200;
+}
+ul li a,
+ul li a:link,
+ul li a:hover,
+ul li a:active, 
+ul li a:visited {
+  color:#39b;
+}
+ul li a {
+   -webkit-transition: all 0.1s linear 0;
+   transition: all 0.1s linear 0;
+}
+ul li a:hover {
+   color: #4ac;
+   padding-left: 2px;
+}
+.head h2 {
+  padding: 12px 0 3px 0;
+  margin:0;
+}
+.t10b2 {
+  //margin-top: 10px;
+  margin: 10px 0 2px 0;
+}
+.content {
+  width:1200px;
+  margin:0 auto;
+  padding-bottom:30px;
+}
+#side-navigation {
+  width: 430px;
+  float:right;
+  padding-top: 20px;
+}
+#schedule {
+  margin-right:430px;
+}
+#schedule ul {
+  /*border-left: 1px solid red;*/
+}
+#schedule .accordion:nth-of-type(n+3) ~ ul {
+  display: none;
+}
+nav ul li {
+  border-bottom: 1px dotted #e3a3a3;
+  padding: 1.5px 5px;
+}
+ul {
+  margin: 1px 0 15px 0;
+}
+ul li {
+  list-style: none;
+  list-style-position:outside;
+  padding:0;
+}
+dl {
+  margin: 1px 0 7px 0;
+}
+dd {
+  margin: 0;
+}
+hr.style-six {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.fy:after {
+  font-family: "FontAwesome";
+  content: "\f0da";
+  padding-left:5px;
+}
+.fy.open:after {
+  font-family: "FontAwesome";
+  content: "\f0d7";
+  padding-left: 5px;
+}
+.date {
+  height: 1px;
+  border: none;
+  border-bottom: 1px #000000 dashed;
+  margin-left: -20px;
+  padding:0 30px 0 0;
+}
+.a {
+  margin: 0 0 7px 0;
+}
+.b {
+  margin: -5px -420px 2px -1rem;
+}
