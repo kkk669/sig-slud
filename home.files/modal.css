@@ -26,6 +26,8 @@ div#modal div.container {
   position: relative;
   width: 80%;
   height: 100%;
+  top: 0;
+  left: 10%;
   padding: 0;
   background-color: #ffffff;
   overflow-y: scroll;
