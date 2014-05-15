@@ -5,12 +5,12 @@ $(function() {
 function setModal() {
 
   //HTML読み込み時にモーダルウィンドウの位置をセンターに調整
-  adjustCenter("div#modal div.container");
+  //adjustCenter("div#modal div.container");
 
   //ウィンドウリサイズ時にモーダルウィンドウの位置をセンターに調整
-  $(window).resize(function() {
+  /*$(window).resize(function() {
     adjustCenter("div#modal div.container");
-  });
+  });*/
 
   //背景がクリックされた時にモーダルウィンドウを閉じる
   $("div#modal div.background").click(function() {
@@ -25,7 +25,7 @@ function setModal() {
         xhr.overrideMimeType("text/html; charset=iso-2022-jp");
       }
     });
-    $("div#modal div.container").load($(this).attr("href"), data="html", onComplete);
+    $("div#modal div.container p.article").load($(this).attr("href"), data="html", onComplete);
     return false;
   });
 
@@ -54,8 +54,8 @@ function displayModal(sign) {
 }
 
 //ウィンドウの位置をセンターに調整
-function adjustCenter(target) {
+/*function adjustCenter(target) {
   var margin_top = ($(window).height()-$(target).height())/2;
   var margin_left = ($(window).width()-$(target).width())/2;
   $(target).css({top:margin_top+"px", left:margin_left+"px"});
-}
+}*/
