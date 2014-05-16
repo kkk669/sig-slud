@@ -151,9 +151,9 @@ hr.style-six {
 }
 
 .address:before {
-  content: "mailto: slud-kanji";
+  content: "mailto: "attr(data-email-local);
 }
 .address:after {
-  content: "lai.kyutech.ac.jp";
+  content: attr(data-email-domain);
 }
 
