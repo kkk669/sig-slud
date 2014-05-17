@@ -1172,6 +1172,9 @@
   <!-- Java script -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="home.files/modal.js"></script>
+  <!--[if lte IE 9]>
+    <script src="home.files/ie9-transition.js"></script>
+  <![endif]-->
   <script>
     $(".accordion ").click(function(){
         $(this).next("ul").slideToggle();
