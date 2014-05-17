@@ -25,6 +25,7 @@ div#modal div.background {
 div#modal div.container {
   position: relative;
   width: 80%;
+  max-width: 930px;
   height: 100%;
   top: 0;
   left: 10%;
