@@ -13,6 +13,9 @@ div#modal {
   height: 100%;
   margin-top: 100%;
 }
+div#modal.show {
+  margin-top: 0;
+}
 div#modal div.background {
   display: none;
   position: fixed;
@@ -33,9 +36,8 @@ div#modal div.container {
   box-shadow: 0 0 10px #000;
   overflow-y: scroll;
   overflow-x: hidden;
-  -webkit-transition-property: top;
-  transition-property: top;
-  /* transition 関係の他のプロパティは js で */
+  -webkit-transition: top 0.25s ease-in;
+  transition: top 0.25s ease-in;
 
   /* センタリング */
   top: 100%;
@@ -44,8 +46,10 @@ div#modal div.container {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
-div#modal div.container.scroll {
+div#modal div.container.slide {
   top: 0;
+  -webkit-transition: top 0.5s ease-out;
+  transition: top 0.5s ease-out;
 }
 /*.rounded-corners-5 {
   border-radius: 5px;

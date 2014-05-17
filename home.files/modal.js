@@ -3,15 +3,6 @@ $(function() {
 })
 
 function setModal() {
-
-  //HTML読み込み時にモーダルウィンドウの位置をセンターに調整
-  //adjustCenter("div#modal div.container");
-
-  //ウィンドウリサイズ時にモーダルウィンドウの位置をセンターに調整
-  /*$(window).resize(function() {
-    adjustCenter("div#modal div.container");
-  });*/
-
   //背景がクリックされた時にモーダルウィンドウを閉じる
   $("div#modal div.background").click(function() {
     displayModal(false);
@@ -43,7 +34,7 @@ function setModal() {
 function displayModal(sign) {
   if (sign) {
     // div#modal を表示
-    $("div#modal").css("margin-top", 0);
+    $("div#modal").toggleClass('show');
     
     // div.container をスライドイン
     displayContainer(sign);
@@ -60,33 +51,14 @@ function displayModal(sign) {
     // div.background をフェードアウト
     $("div.background").fadeOut(250, function() {
       // div#modal 全体を非表示
-      $("div#modal").css("margin-top", "100%");
+      $("div#modal").toggleClass('show');
       // 背景のスクロール許可
       $('body').removeClass('noscroll');
     });
   }
 }
 
-// div.container を表示/非表示
+// div.container を表示/非表示(引数 sign は ie9-transition.js との互換)
 function displayContainer(sign) {
-  if (sign) {
-    $("div.container").css("-webkit-transition-duration", "0.5s");
-    $("div.container").css("transition-duration", "0.5s");
-    $("div.container").css("-webkit-transition-timing-function", "ease-out");
-    $("div.container").css("transition-timing-function", "ease-out");
-    $("div.container").addClass("scroll");
-  } else {
-    $("div.container").css("-webkit-transition-duration", "0.25s");
-    $("div.container").css("transition-duration", "0.25s");
-    $("div.container").css("-webkit-transition-timing-function", "ease-in");
-    $("div.container").css("transition-timing-function", "ease-in");
-    $("div.container").removeClass("scroll");
-  }
+  $("div.container").toggleClass("slide");
 }
-
-//ウィンドウの位置をセンターに調整
-/*function adjustCenter(target) {
-  var margin_top = ($(window).height()-$(target).height())/2;
-  var margin_left = ($(window).width()-$(target).width())/2;
-  $(target).css({top:margin_top+"px", left:margin_left+"px"});
-}*/
