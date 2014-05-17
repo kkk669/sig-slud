@@ -13,7 +13,6 @@ div#modal {
   height: 100%;
   margin-top: 100%;
   display: table-cell;
-  text-align: center;
 }
 div#modal.show {
   margin-top: 0;
@@ -30,7 +29,6 @@ div#modal div.background {
 }
 div#modal div.container {
   position: relative;
-  text-align: left;
   width: 80%;
   max-width: 930px;
   height: 100%;
