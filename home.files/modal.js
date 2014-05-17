@@ -45,13 +45,8 @@ function displayModal(sign) {
     // div#modal を表示
     $("div#modal").css("margin-top", 0);
     
-    // div.container をスクロールイン
-    $("div.container").css("-webkit-transition-duration", "0.5s");
-    $("div.container").css("transition-duration", "0.5s");
-    $("div.container").css("-webkit-transition-timing-function", "ease-out");
-    $("div.container").css("transition-timing-function", "ease-out");
-    $("div.container").addClass("scroll");
-    
+    // div.container をスライドイン
+    displayContainer(sign);
     $('div.container').animate({scrollTop: 0}, 1);
 
     // div.background をフェードイン
@@ -59,12 +54,8 @@ function displayModal(sign) {
     // 背景のスクロール禁止
     $('body').addClass('noscroll');
   } else {
-    // div.container をスクロールアウト
-    $("div.container").css("-webkit-transition-duration", "0.25s");
-    $("div.container").css("transition-duration", "0.25s");
-    $("div.container").css("-webkit-transition-timing-function", "ease-in");
-    $("div.container").css("transition-timing-function", "ease-in");
-    $("div.container").removeClass("scroll");
+    // div.container をスライドアウト
+    displayContainer(sign);
 
     // div.background をフェードアウト
     $("div.background").fadeOut(250, function() {
@@ -73,6 +64,23 @@ function displayModal(sign) {
       // 背景のスクロール許可
       $('body').removeClass('noscroll');
     });
+  }
+}
+
+// div.container を表示/非表示
+function displayContainer(sign) {
+  if (sign) {
+    $("div.container").css("-webkit-transition-duration", "0.5s");
+    $("div.container").css("transition-duration", "0.5s");
+    $("div.container").css("-webkit-transition-timing-function", "ease-out");
+    $("div.container").css("transition-timing-function", "ease-out");
+    $("div.container").addClass("scroll");
+  } else {
+    $("div.container").css("-webkit-transition-duration", "0.25s");
+    $("div.container").css("transition-duration", "0.25s");
+    $("div.container").css("-webkit-transition-timing-function", "ease-in");
+    $("div.container").css("transition-timing-function", "ease-in");
+    $("div.container").removeClass("scroll");
   }
 }
 
