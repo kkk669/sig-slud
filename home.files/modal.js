@@ -4,8 +4,9 @@ $(function() {
 
 function setModal() {
   //背景がクリックされた時にモーダルウィンドウを閉じる
-  $("div#modal div.background").click(function() {
-    displayModal(false);
+  $("div#modal div.container-back").click(function(e) {
+    if (e.target.className === 'container-back slide')
+      displayModal(false);
   });
 
   //リンクがクリックされた時にAjaxでコンテンツを読み込む
@@ -38,7 +39,7 @@ function displayModal(sign) {
     
     // div.container をスライドイン
     displayContainer(sign);
-    $('div.container').animate({scrollTop: 0}, 1);
+    $('div.container-back').animate({scrollTop: 0}, 1);
 
     // div.background をフェードイン
     $("div.background").fadeIn(500);
@@ -60,5 +61,5 @@ function displayModal(sign) {
 
 // div.container を表示/非表示(引数 sign は ie9-transition.js との互換)
 function displayContainer(sign) {
-  $("div.container").toggleClass("slide");
+  $("div.container-back").toggleClass("slide");
 }
