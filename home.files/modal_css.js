@@ -43,21 +43,21 @@ function setModal() {
 function displayModal(sign) {
   if (sign) {
     // div#modal を表示
-    $("div#modal").toggle(0, function() {
-      // div.container をスクロールイン
-      $("div.container").css("-webkit-transition-duration", "0.5s");
-      $("div.container").css("transition-duration", "0.5s");
-      $("div.container").css("-webkit-transition-timing-function", "ease-out");
-      $("div.container").css("transition-timing-function", "ease-out");
-      $("div.container").addClass("scroll");
-      
-      $('div.container').animate({scrollTop: 0}, 1);
+    $("div#modal").css("margin-top", 0);
+    
+    // div.container をスクロールイン
+    $("div.container").css("-webkit-transition-duration", "0.5s");
+    $("div.container").css("transition-duration", "0.5s");
+    $("div.container").css("-webkit-transition-timing-function", "ease-out");
+    $("div.container").css("transition-timing-function", "ease-out");
+    $("div.container").addClass("scroll");
+    
+    $('div.container').animate({scrollTop: 0}, 1);
 
-      // div.background をフェードイン
-      $("div.background").fadeIn(500);
-      // 背景のスクロール禁止
-      $('body').addClass('noscroll');
-    });
+    // div.background をフェードイン
+    $("div.background").fadeIn(500);
+    // 背景のスクロール禁止
+    $('body').addClass('noscroll');
   } else {
     // div.container をスクロールアウト
     $("div.container").css("-webkit-transition-duration", "0.25s");
@@ -69,7 +69,7 @@ function displayModal(sign) {
     // div.background をフェードアウト
     $("div.background").fadeOut(250, function() {
       // div#modal 全体を非表示
-      $("div#modal").toggle();
+      $("div#modal").css("margin-top", "100%");
       // 背景のスクロール許可
       $('body').removeClass('noscroll');
     });
