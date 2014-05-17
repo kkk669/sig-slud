@@ -42,14 +42,21 @@ function setModal() {
 //モーダルウィンドウを開く
 function displayModal(sign) {
   if (sign) {
-    var scrolltop = $(window).scrollTop();
+    // div#modal を表示してからアニメーション
+    $("div#modal").toggle(0, function() {
+      $("div.container").animate({top: 0}, 500);
+      $('div.container').animate({scrollTop: 0}, 1);
 
-    $('div.container').animate({scrollTop: 0}, 1);
-    $("div#modal").fadeIn(500);
-    $('body').addClass('noscroll');
+      $("div.background").fadeIn(500);
+      $('body').addClass('noscroll');
+    });
   } else {
-    $("div#modal").fadeOut(250);
-    $('body').removeClass('noscroll');
+    $("div.container").animate({top: "100%"}, 250);
+
+    $("div.background").fadeOut(250, function() {
+      $("div#modal").toggle();
+      $('body').removeClass('noscroll');
+    });
   }
 }
 

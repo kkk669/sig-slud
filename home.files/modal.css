@@ -14,6 +14,7 @@ div#modal {
   height: 100%;
 }
 div#modal div.background {
+  display: none;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -27,12 +28,18 @@ div#modal div.container {
   width: 80%;
   max-width: 930px;
   height: 100%;
-  top: 0;
-  left: 10%;
+  top: 100%;
   padding: 0;
   background-color: #ffffff;
+  box-shadow: 0 0 10px #000;
   overflow-y: scroll;
   overflow-x: hidden;
+
+  /* センタリング */
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 div#modal div.container p.article {
   margin: 0 12px 30px 12px;
