@@ -45,9 +45,6 @@ div#modal div.container.slide {
   -webkit-transition: margin-top 0.5s ease-out;
   transition: margin-top 0.5s ease-out;
 }
-.rounded-corners-5 {
-  border-radius: 5px;
-}
 div#modal div.container p.article {
   margin: 0 12px 30px 12px;
   padding: 0;
