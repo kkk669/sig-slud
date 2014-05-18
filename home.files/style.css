@@ -145,3 +145,15 @@ hr.style-six {
   padding:0 30px 0 0;
 }
 */
+.address {
+  margin:16px 0 0 0px;
+  font-size: 16pt;
+}
+
+.address:before {
+  content: "mailto: "attr(data-email-local);
+}
+.address:after {
+  content: attr(data-email-domain);
+}
+
