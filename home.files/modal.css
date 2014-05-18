@@ -24,7 +24,6 @@ div#modal div.background {
   height: 100%;
   background-color: #000000;
   opacity: 0.75;
-  filter: alpha(opacity=75);
   -ms-filter: "alpha(opacity=75)";
 }
 div#modal div.container-back {
@@ -35,11 +34,15 @@ div#modal div.container-back {
   padding: 0;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
+  -o-transition: margin-top 0.25s ease-in;
+  -moz-transition: margin-top 0.25s ease-in;
   -webkit-transition: margin-top 0.25s ease-in;
   transition: margin-top 0.25s ease-in;
 }
 div#modal div.container-back.slide {
   margin-top: 0;
+  -o-transition: margin-top 0.5s ease-out;
+  -moz-transition: margin-top 0.5s ease-out;
   -webkit-transition: margin-top 0.5s ease-out;
   transition: margin-top 0.5s ease-out;
 }

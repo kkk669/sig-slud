@@ -35,7 +35,7 @@ function setModal() {
 function displayModal(sign) {
   if (sign) {
     // div#modal を表示
-    $("div#modal").toggleClass('show');
+    $("div#modal").addClass('show');
     
     // div.container をスライドイン
     displayContainer(sign);
@@ -52,7 +52,7 @@ function displayModal(sign) {
     // div.background をフェードアウト
     $("div.background").fadeOut(250, function() {
       // div#modal 全体を非表示
-      $("div#modal").toggleClass('show');
+      $("div#modal").removeClass('show');
       // 背景のスクロール許可
       $('body').removeClass('noscroll');
     });
@@ -61,5 +61,9 @@ function displayModal(sign) {
 
 // div.container を表示/非表示(引数 sign は ie9-transition.js との互換)
 function displayContainer(sign) {
-  $("div.container-back").toggleClass("slide");
+  if (sign) {
+    $("div.container-back").addClass("slide");
+  } else {
+    $("div.container-back").removeClass("slide");
+  }
 }
