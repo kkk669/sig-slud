@@ -24,14 +24,10 @@ div#modal {
 }
 div#modal.fade {
   background-color: rgba(0, 0, 0, 0.75);
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#C0000000, endColorstr=#C0000000)";
   -o-transition: background-color 0.5s ease-out;
   -moz-transition: background-color 0.5s ease-out;
   -webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
-}
-div#modal.fade:not(:target) { /* IE9以上向け */
-  -ms-filter: none;
 }
 div#modal.show {
   margin-top: 0;
