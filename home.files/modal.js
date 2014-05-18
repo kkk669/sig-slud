@@ -4,8 +4,8 @@ $(function() {
 
 function setModal() {
   //背景がクリックされた時にモーダルウィンドウを閉じる
-  $("div#modal div.container-back").click(function(e) {
-    if (e.target.className === 'container-back slide')
+  $("div#modal").click(function(e) {
+    if (e.target.id === 'modal')
       displayModal(false);
   });
 
@@ -34,32 +34,53 @@ function setModal() {
 //モーダルウィンドウを開く
 function displayModal(sign) {
   if (sign) {
-    // div#modal を表示
-    $("div#modal").toggleClass('show');
+    // div#modal を表示しフェードイン
+    $("div#modal").addClass('show');
+    animateModal(sign);
+    $('div#modal').animate({scrollTop: 0}, 1);
     
     // div.container をスライドイン
-    displayContainer(sign);
-    $('div.container-back').animate({scrollTop: 0}, 1);
+    animateContainer(sign);
 
-    // div.background をフェードイン
-    $("div.background").fadeIn(500);
     // 背景のスクロール禁止
     $('body').addClass('noscroll');
   } else {
-    // div.container をスライドアウト
-    displayContainer(sign);
+    // モーダルウィンドウの背後をフェードアウト
+    animateModal(sign);
 
-    // div.background をフェードアウト
-    $("div.background").fadeOut(250, function() {
-      // div#modal 全体を非表示
-      $("div#modal").toggleClass('show');
-      // 背景のスクロール許可
+    // div.container をスライドアウト
+    animateContainer(sign);
+
+    // アニメーションの時間に合わせて div#modal を非表示
+    setTimeout(function() {
+      $("div#modal").removeClass('show');
       $('body').removeClass('noscroll');
-    });
+    }, 250);
+  }
+}
+
+// div#modal を表示/非表示(引数 sign は ie9-transition.js との互換)
+function animateModal(sign) {
+  if (sign) {
+    $("div#modal").addClass('fade');
+  } else {
+    $("div#modal").removeClass('fade');
   }
 }
 
 // div.container を表示/非表示(引数 sign は ie9-transition.js との互換)
-function displayContainer(sign) {
-  $("div.container-back").toggleClass("slide");
+function animateContainer(sign) {
+  if (sign) {
+    if ((window.navigator.userAgent.toLowerCase()).indexOf('gecko/') != -1) {
+      // Firefox なら delay をいれる
+      setTimeout(function() {
+        $("div.container").addClass("slide");
+      }, 20);
+    } else {
+      // Firefox 以外はそのまま
+      $("div.container").addClass("slide");
+    }
+  } else {
+    $("div.container").removeClass("slide");
+  }
 }

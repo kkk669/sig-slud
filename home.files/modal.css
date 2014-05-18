@@ -11,45 +11,49 @@ div#modal {
   position: fixed;
   width: 100%;
   height: 100%;
-  margin-top: 100%;
-  display: table-cell;
-}
-div#modal.show {
-  margin-top: 0;
-}
-div#modal div.background {
-  display: none;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: #000000;
-  opacity: 0.75;
-  filter: alpha(opacity=75);
-  -ms-filter: "alpha(opacity=75)";
-}
-div#modal div.container-back {
-  position: relative;
-  width: 100%;
-  height: 100%;
   margin: 100% 0 0 0;
   padding: 0;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
-  -webkit-transition: margin-top 0.25s ease-in;
-  transition: margin-top 0.25s ease-in;
+  display: table-cell;
+  background-color: transparent;
+  -o-transition: background-color 0.25s ease-in;
+  -moz-transition: background-color 0.25s ease-in;
+  -webkit-transition: background-color 0.25s ease-in;
+  transition: background-color 0.25s ease-in;
 }
-div#modal div.container-back.slide {
+div#modal.fade {
+  background-color: rgba(0, 0, 0, 0.75);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#C0000000, endColorstr=#C0000000)";
+  -o-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+div#modal.fade:not(:target) { /* IE9以上向け */
+  -ms-filter: none;
+}
+div#modal.show {
   margin-top: 0;
-  -webkit-transition: margin-top 0.5s ease-out;
-  transition: margin-top 0.5s ease-out;
 }
 div#modal div.container {
   width: 80%;
   max-width: 930px;
-  margin: 20px auto 20px auto;
+  margin: 100% auto 20px auto;
   padding: 0;
   background-color: #fbfbfb;
   overflow-x: hidden;
+  -o-transition: margin-top 0.25s ease-in;
+  -moz-transition: margin-top 0.25s ease-in;
+  -webkit-transition: margin-top 0.25s ease-in;
+  transition: margin-top 0.25s ease-in;
+}
+div#modal div.container.slide {
+  margin-top: 20px;
+  -o-transition: margin-top 0.5s ease-out;
+  -moz-transition: margin-top 0.5s ease-out;
+  -webkit-transition: margin-top 0.5s ease-out;
+  transition: margin-top 0.5s ease-out;
 }
 div#modal div.container p.article {
   margin: 0 12px 30px 12px;
