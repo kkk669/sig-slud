@@ -54,9 +54,6 @@ ul li a:hover {
 }
 #schedule >  ul {
   border-left: 1px solid #bfd8a9;
-  /*
-  margin-left: 8px;
-  */
   margin: 0 0 16px 8px;
   padding: 16px 0 4px 63px;
 }
@@ -68,17 +65,6 @@ ul li a:hover {
   margin: 0 -495px 10px 0;
   list-style: circle;
 }
-/*
-.a {
-  margin: -5px 0 12px 0;
-  padding-left:24px;
-}
-.b {
-  margin: 0px -495px 10px 0px;
-  white-space: normal;
-  margin:0 0 6px;
-}
-*/
 #schedule .accordion:nth-of-type(n+3) ~ ul {
   display: none;
 }
@@ -107,19 +93,9 @@ dl {
 dt {
   margin:2px 0 1px;
 }
-/*
-dt:before {
-  content: "日付： "
-}
-*/
 dd {
   margin: 0;
 }
-/*
-dd:before {
-  content: "場所： "
-}
-*/
 hr.style-six {
   border: 0;
   height: 0;
@@ -136,15 +112,6 @@ hr.style-six {
   content: "\f0d7";
   padding-left: 5px;
 }
-/*
-.date {
-  height: 1px;
-  border: none;
-  border-bottom: 1px #000000 dashed;
-  margin:0 0 3px -17px;
-  padding:0 30px 0 0;
-}
-*/
 .address {
   margin:16px 0 0 0px;
   font-size: 16pt;
