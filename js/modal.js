@@ -11,12 +11,12 @@ function setModal() {
 
   //リンクがクリックされた時にAjaxでコンテンツを読み込む
   $("a.modal").click(function(event) {
-    event.preventDefault();
-    $.ajaxSetup({
-      beforeSend: function(xhr){
-        xhr.overrideMimeType("text/html; charset=iso-2022-jp");
-      }
-    });
+    //event.preventDefault();
+    //$.ajaxSetup({
+    //  beforeSend: function(xhr){
+    //    xhr.overrideMimeType("text/html; charset=iso-2022-jp");
+    //  }
+    //});
     $("div#modal div.container p.article").load($(this).attr("href"), data="html", onComplete);
     return false;
   });

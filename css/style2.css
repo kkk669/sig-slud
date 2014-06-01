@@ -47,21 +47,19 @@ section, footer {
   margin-left:auto;
 }
 .sidenav {
-  width: 240px;
+  width: 276px;
   float: left;
   padding: 12px 0 8px;
   background-color: #edf4ed;
   border-radius:7px;
 }
 .main {
-  margin-left:250px;
+  margin-left:286px;
 }
 nav ul li > a {
   width: 120px;
 }
 nav ul li {
-  position: relative;
-
   list-style: none;
   padding: 4px 5px;
   margin:4px 0;
@@ -72,16 +70,17 @@ nav ul {
   padding: 0 0 0 16px;
 }
 nav ul ul {
-  visibility:hidden;
-  position: absolute;
-  top: -18px;
-  left:100%;
+  display:none;
+  left:20px;
   margin:0;
-  padding:12px 4px;
-  width:120px;
+  padding:4px;
+  width:220px;
 }
 nav ul li:hover ul {
   visibility: visible;
+}
+.navlist {
+  position: relative;
 }
 .fa {
   float: right;
@@ -111,11 +110,11 @@ p {
 
 #schedule {
   margin-top:20px;
+  clear: left;
 }
 #schedule  ul {
   margin: 0 0 16px 8px;
   padding: 16px 0 4px 63px;
-//  list-style-type:none;
 }
 #schedule ul li {
   list-style: none;
@@ -148,15 +147,15 @@ dd {
   margin: 0;
 }
 
+.open:after .fy {
+  font-family: "FontAwesome";
+  content: "\f0d7";
+  padding-left: 5px;
+}
 .fy:after {
   font-family: "FontAwesome";
   content: "\f0da";
   padding-left:5px;
-}
-.fy.open:after {
-  font-family: "FontAwesome";
-  content: "\f0d7";
-  padding-left: 5px;
 }
 .address {
   margin:16px 0 0 0px;

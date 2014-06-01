@@ -35,7 +35,7 @@
             <div class="sidenav">
               <nav>
                 <ul>
-                  <li class="navlist">研究会 SIG-SLUD に関して<i class="fa fa-angle-right"></i>
+                  <li class="navlist accordion">研究会 SIG-SLUD に関して<i class="fa fa-angle-right"></i>
                     <ul>
                       <li><a class="within-l" href="#">研究分野</a></li>
                       <li><a class="within-l" href="#">委員</a></li>
@@ -43,13 +43,13 @@
                       <li><a class="within-l" href="#">研究会参加登録</a></li>
                     </ul>
                   </li>
-                  <li class="navlist">発表に関して<i class="fa fa-angle-right"></i>
+                  <li class="navlist accordion">発表に関して<i class="fa fa-angle-right"></i>
                     <ul>
                       <li><a class="within-l" href="#">スケジュール</a></li>
                       <li><a class="within-l" href="#">発表申し込み</a></li>
                     </ul>
                   </li>
-                  <li class="navlist">研究情報<i class="fa fa-angle-right"></i>
+                  <li class="navlist accordion">研究情報<i class="fa fa-angle-right"></i>
                     <ul>
                       <li><a class="within-l" href="#">コーパス利用研究グループ</a></li>
                       <li><a class="within-l" href="#">SIGDIAL 等</a></li>
@@ -101,7 +101,7 @@
         <![endif]-->
         <script>
           $(".accordion ").click(function(){
-              $(this).next("ul").slideToggle();
+              $(this).children("ul").slideToggle();
               $(this).toggleClass("open");
           });
         </script>

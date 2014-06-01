@@ -12,21 +12,22 @@ title: JSAI SIG-SLUD 言語・音声理解と対話処理研究会 - 人工知�
       </div>
       <div class="box-content">
         <!-- 2013 -->
-        <div class="fy accordion open">2013 年度研究会</div>
-        <ul>
-        {% for post in site.posts %}
-          <li>
-            <span class="state">{{ post.state }}</span>
-            <span>
-              <a class="modal" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-            </span>
-            <dl>
-              <dt class="date">{{ post.time }}</dt>
-              <dd>{{ post.place }}</dd>
-            </dl>
-          </li>
-        {% endfor %}
-        </ul>
+        <div class="accordion open"><span class="fy">2013 年度研究会</span>
+          <ul>
+          {% for post in site.posts %}
+            <li>
+              <span class="state">{{ post.state }}</span>
+              <span>
+                <a class="modal" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+              </span>
+              <dl>
+                <dt class="date">{{ post.time }}</dt>
+                <dd>{{ post.place }}</dd>
+              </dl>
+            </li>
+          {% endfor %}
+          </ul>
+        </div>
       </div><!-- box-content -->
     </div>
   </div>
