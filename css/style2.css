@@ -4,6 +4,7 @@ body {
   font-family: 'Lucida Grande','Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;
   margin:0;
   padding:0;
+  background-color: #fafafa;
 }
 a,
 a:link,
@@ -66,9 +67,9 @@ nav ul li {
   margin:4px 0;
 }
 nav ul {
-  margin: 1px 0 12px 0;
+  position: relative;
+  margin: 1px 6px 12px 0;
   padding: 0 0 0 16px;
-  width: 60px;
 }
 nav ul ul {
   visibility:hidden;
@@ -82,18 +83,16 @@ nav ul ul {
 nav ul li:hover ul {
   visibility: visible;
 }
-/*
-ul li {
-  list-style: none;
+.fa {
+  float: right;
 }
-*/
 
 .box {
   margin: 0px 5px;
   padding:3px;
   border-radius:8px;
-  background: #f8f8ff;
-  border: 1px solid #e7e7ff;
+  background: #e8e8ee;
+  border: 1px solid #d7d7ee;
 }
 .box-header {
   padding-left: 8px;;
@@ -101,7 +100,7 @@ ul li {
 }
 .box-content {
   border-radius:8px;
-  background:white;
+  background: #fafafa;
   margin:0;
   padding: 8px;
   
@@ -114,11 +113,12 @@ p {
   margin-top:20px;
 }
 #schedule  ul {
-  /*
-  border-left: 1px solid #bfd8a9;
-  */
   margin: 0 0 16px 8px;
   padding: 16px 0 4px 63px;
+//  list-style-type:none;
+}
+#schedule ul li {
+  list-style: none;
 }
 #schedule ul ul{
   margin: -8px 0 12px 15px;
@@ -133,6 +133,9 @@ p {
 }
 .accordion {
   margin:0 0 3px 0;
+}
+.state {
+  margin-left: -40px;
 }
 dl {
   padding-left:8px;
