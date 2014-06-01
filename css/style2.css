@@ -50,6 +50,7 @@ section, footer {
   width: 276px;
   float: left;
   padding: 12px 0 8px;
+  margin-bottom: 8px;
   background-color: #edf4ed;
   border-radius:7px;
 }
