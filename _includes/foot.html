@@ -1,0 +1,35 @@
+          <footer>
+            <!--
+            <div class="address" data-email-local="slud-kanji" data-email-domain="lai.kyutech.ac.jp">@</div>
+            -->
+            <p>Copyright © 2014 Nelab All Rights Reserved.</p>
+          </footer>
+    
+        </div>
+    
+        <!-- Java script -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="{{ site.baseurl }}/js/modal.js"></script>
+        <!--[if lte IE 9]>
+          <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+          <script src="{{ site.baseurl }}/js/ie9-transition.js"></script>
+        <![endif]-->
+        <script>
+          $(".accordion").click(function(){
+              $(this).children("ul").slideToggle();
+              $(this).toggleClass("open");
+          });
+        </script>
+
+         <script>
+           $(function() {
+               $(".accordion-2").click(function(){
+                 $(this).toggleClass("active").siblings().removeClass('active');
+               });
+           });
+         </script>
+
+
+    </body>
+
+</html>

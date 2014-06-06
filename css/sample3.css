@@ -1,0 +1,177 @@
+body {
+  font-size:12pt;
+  color: #393939;
+  font-family: 'Lucida Grande','Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;
+  margin:0;
+  padding:0;
+  background-color: #fafafa;
+}
+a,
+a:link,
+a:hover,
+a:active, 
+a:visited {
+  color: #002200;
+}
+ul li a,
+ul li a:link,
+ul li a:hover,
+ul li a:active, 
+ul li a:visited {
+  color:#39b;
+}
+ul li a {
+   -webkit-transition: all 0.1s linear 0;
+   transition: all 0.1s linear 0;
+}
+ul li a:hover {
+   color: #4ac;
+   padding-left: 2px;
+}
+.head h2 {
+  padding: 22px 0 10px 0;
+  margin:0px 0;
+}
+hr {
+  border: 0;
+  height: 0;
+  margin: 8px 0 20px;
+  border-top: 1px solid #eee;
+}
+.content {
+  min-width:1140px;
+}
+section, footer {
+  width: 1090px;
+  margin-right:auto;
+  margin-left:auto;
+}
+.sidenav {
+  width: 276px;
+  float: left;
+}
+
+.main, #schedule{
+  margin-left:286px;
+}
+nav ul li > a {
+  width: 120px;
+}
+nav ul li {
+  list-style: none;
+  padding: 4px 5px;
+  margin:4px 0;
+}
+nav ul {
+  position: relative;
+  margin: 1px 6px 12px 0;
+  padding: 0 0 0 16px;
+}
+nav ul ul {
+  display:none;
+  left:20px;
+  margin:0;
+  padding:4px;
+  width:220px;
+}
+nav ul li:hover ul {
+  visibility: visible;
+}
+.navlist {
+  position: relative;
+}
+.fa {
+  float: right;
+}
+
+.box {
+  margin: 0px 5px;
+  padding:3px;
+  border-radius:8px;
+  background: #e8e8ee;
+  border: 1px solid #d7d7ee;
+}
+.box-header {
+  padding-left: 8px;;
+  font-size:18px;
+}
+.box-content {
+  border-radius:8px;
+  background: #fafafa;
+  margin:0;
+  padding: 8px;
+  
+}
+p {
+  margin:8px 0;
+}
+
+#schedule {
+  margin-top:20px;
+}
+#schedule  ul {
+  margin:16px 0 8px 16px;
+  padding:0;
+}
+#schedule ul li {
+  list-style: none;
+  float:left;
+}
+#schedule ul ul{
+  margin: -8px 0 12px 15px;
+  padding-left: 24px;
+}
+#schedule ul ul li {
+  margin: 0 -495px 10px 0;
+  list-style: circle;
+}
+#schedule .accordion:nth-of-type(n+2) ~ ul {
+  display: none;
+}
+.accordion {
+  margin:0 0 3px 0;
+}
+.state {
+  margin: 0px 12px 0;
+  float:left;
+}
+.clearfix:after {
+  content: "";
+  clear:both;
+  display:block;
+}
+dl {
+  padding-left:8px;
+  margin:0 0 16px;
+}
+dt {
+  margin:2px 0 1px;
+}
+dd {
+  margin: 0;
+}
+
+.open:after .fy {
+  font-family: "FontAwesome";
+  content: "\f0d7";
+  padding-left: 5px;
+}
+.fy:after {
+  font-family: "FontAwesome";
+  content: "\f0da";
+  padding-left:5px;
+}
+.address {
+  margin:16px 0 0 0px;
+  font-size: 16pt;
+}
+.address:before {
+  content: "mailto: "attr(data-email-local);
+}
+.address:after {
+  content: attr(data-email-domain);
+}
+footer {
+  padding:30px 0 30px;
+  clear:both;
+}
