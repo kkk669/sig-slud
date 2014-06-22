@@ -20,8 +20,10 @@ title: JSAI SIG-SLUD 言語・音声理解と対話処理研究会 - 人工知�
         {% else %}
           {% assign current_year = year %}
         {% endif %}
-        {% if current_year != last_year %}
-            {% if last_year != 0 %}
+        {% assign tmp1 = current_year | minus:1 | plus: 1 %}
+        {% assign tmp2 = last_year    | minus:1 | plus: 1 %}
+        {% if tmp1 != tmp2 %}
+            {% if tmp2 != 0 %}
               </ul>
             </div>
             {% endif %}
