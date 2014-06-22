@@ -14,21 +14,23 @@ title: JSAI SIG-SLUD 言語・音声理解と対話処理研究会 - 人工知�
       {% assign last_year = 0 %}
       {% for post in site.posts %}
         {% assign month = post.date | date: "%m" %}
+        {% assign year  = post.date | date: "%Y" %}
         {% if month  == '01' or month == '02' or month == '03' %}
-          {% assign current_year = post.date | date: "%Y" | minus: 1 %}
+          {% assign current_year = year | minus: 1 %}
         {% else %}
-          {% assign current_year = post.date | date: "%Y" %}
+          {% assign current_year = year %}
         {% endif %}
         {% if current_year != last_year %}
             {% if last_year != 0 %}
               </ul>
+            </div>
             {% endif %}
             <div class="accordion open"><span class="fy">{{ current_year }} 年度研究会</span>
               <ul class="clearfix">
         {% endif %}
               <li>
                 <div class="state">{{ post.state }}</div>
-                <div style="margin-left:140px;">
+                <div >
                   <span><a class="modal" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></span>
                   <dl>
                     <dt class="date">{{ post.time }}</dt>

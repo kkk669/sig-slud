@@ -1,0 +1,126 @@
+body {
+  background-color:#fefeff;
+
+  font-size:12pt;
+  color: #393939;
+  font-family: 'Lucida Grande','Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;
+  margin:0;
+  padding:0;
+}
+a,
+a:link,
+a:hover,
+a:active, 
+a:visited {
+  color: #002200;
+}
+ul li a,
+ul li a:link,
+ul li a:hover,
+ul li a:active, 
+ul li a:visited {
+  color:#39b;
+}
+ul li a {
+   -webkit-transition: all 0.1s linear 0;
+   transition: all 0.1s linear 0;
+}
+ul li a:hover {
+   color: #4ac;
+   padding-left: 2px;
+}
+.head h2 {
+  padding: 22px 0 10px 0;
+  margin:0px 0;
+}
+.t10b2 {
+  margin: 10px 0 2px 0;
+}
+.content {
+  width:1100px;
+  margin:0 80px;
+  padding: 0 30px 30px;
+  background-color: #fdfdff;
+}
+#side-navigation {
+  width: 430px;
+  float:right;
+  padding-top: 20px;
+  background-color: #edf4ed;
+  border-radius:7px;
+}
+#schedule {
+  margin-right:430px;
+}
+#schedule >  ul {
+  border-left: 1px solid #bfd8a9;
+  margin: 0 0 16px 8px;
+  padding: 16px 0 4px 63px;
+}
+#schedule ul ul{
+  margin: -8px 0 12px 15px;
+  padding-left: 24px;
+}
+#schedule ul ul li {
+  margin: 0 -495px 10px 0;
+  list-style: circle;
+}
+#schedule .accordion:nth-of-type(n+3) ~ ul {
+  display: none;
+}
+.accordion {
+  margin:0 0 3px 0;
+}
+nav ul li {
+  padding: 2.5px 5px;
+}
+ul {
+  margin: 1px 0 12px 0;
+  padding: 0 0 0 30px;
+}
+ul li {
+  list-style: none;
+  list-style-position:outside;
+  padding:0;
+}
+ul ul li {
+  list-style: circle;
+}
+dl {
+  padding-left:8px;
+  margin:0 0 16px;
+}
+dt {
+  margin:2px 0 1px;
+}
+dd {
+  margin: 0;
+}
+hr.style-six {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.fy:after {
+  font-family: "FontAwesome";
+  content: "\f0da";
+  padding-left:5px;
+}
+.fy.open:after {
+  font-family: "FontAwesome";
+  content: "\f0d7";
+  padding-left: 5px;
+}
+.address {
+  margin:16px 0 0 0px;
+  font-size: 16pt;
+}
+
+.address:before {
+  content: "mailto: "attr(data-email-local);
+}
+.address:after {
+  content: attr(data-email-domain);
+}
+

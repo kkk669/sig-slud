@@ -1,11 +1,10 @@
 body {
-  background-color:#fefeff;
-
   font-size:12pt;
   color: #393939;
   font-family: 'Lucida Grande','Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;
   margin:0;
   padding:0;
+  background-color: #fafafa;
 }
 a,
 a:link,
@@ -33,29 +32,90 @@ ul li a:hover {
   padding: 22px 0 10px 0;
   margin:0px 0;
 }
-.t10b2 {
-  margin: 10px 0 2px 0;
+hr {
+  border: 0;
+  height: 0;
+  margin: 8px 0 20px;
+  border-top: 1px solid #eee;
 }
 .content {
-  width:1100px;
-  margin:0 80px;
-  padding: 0 30px 30px;
-  background-color: #fdfdff;
+  min-width:1140px;
 }
-#side-navigation {
-  width: 430px;
-  float:right;
-  padding-top: 20px;
-  background-color: #edf4ed;
-  border-radius:7px;
+section, footer {
+  width: 1090px;
+  margin-right:auto;
+  margin-left:auto;
 }
+.sidenav {
+  width: 276px;
+  float: left;
+}
+
+.main, #schedule{
+  margin-left:286px;
+}
+nav ul li > a {
+  width: 120px;
+}
+nav ul li {
+  list-style: none;
+  padding: 4px 5px;
+  margin:4px 0;
+}
+nav ul {
+  position: relative;
+  margin: 1px 6px 12px 0;
+  padding: 0 0 0 16px;
+}
+nav ul ul {
+  display:none;
+  left:20px;
+  margin:0;
+  padding:4px;
+  width:220px;
+}
+nav ul li:hover ul {
+  visibility: visible;
+}
+.navlist {
+  position: relative;
+}
+.fa {
+  float: right;
+}
+
+.box {
+  margin: 0px 5px;
+  padding:3px;
+  border-radius:8px;
+  background: #e8e8ee;
+  border: 1px solid #d7d7ee;
+}
+.box-header {
+  padding-left: 8px;;
+  font-size:18px;
+}
+.box-content {
+  border-radius:8px;
+  background: #fafafa;
+  margin:0;
+  padding: 8px;
+  
+}
+p {
+  margin:8px 0;
+}
+
 #schedule {
-  margin-right:430px;
+  margin-top:20px;
 }
-#schedule >  ul {
-  border-left: 1px solid #bfd8a9;
-  margin: 0 0 16px 8px;
-  padding: 16px 0 4px 63px;
+#schedule  ul {
+  margin:16px 0 8px 16px;
+  padding:0;
+}
+#schedule ul li {
+  list-style: none;
+  display:table;
 }
 #schedule ul ul{
   margin: -8px 0 12px 15px;
@@ -65,26 +125,21 @@ ul li a:hover {
   margin: 0 -495px 10px 0;
   list-style: circle;
 }
-#schedule .accordion:nth-of-type(n+3) ~ ul {
+#schedule .accordion:nth-of-type(n+2) ~ ul {
   display: none;
 }
 .accordion {
   margin:0 0 3px 0;
 }
-nav ul li {
-  padding: 2.5px 5px;
+.state {
+  display:table-cell;
+  width:140px;
+  text-align:center;
 }
-ul {
-  margin: 1px 0 12px 0;
-  padding: 0 0 0 30px;
-}
-ul li {
-  list-style: none;
-  list-style-position:outside;
-  padding:0;
-}
-ul ul li {
-  list-style: circle;
+.clearfix:after {
+  content: "";
+  clear:both;
+  display:block;
 }
 dl {
   padding-left:8px;
@@ -96,31 +151,28 @@ dt {
 dd {
   margin: 0;
 }
-hr.style-six {
-  border: 0;
-  height: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+.open:after .fy {
+  font-family: "FontAwesome";
+  content: "\f0d7";
+  padding-left: 5px;
 }
 .fy:after {
   font-family: "FontAwesome";
   content: "\f0da";
   padding-left:5px;
 }
-.fy.open:after {
-  font-family: "FontAwesome";
-  content: "\f0d7";
-  padding-left: 5px;
-}
 .address {
   margin:16px 0 0 0px;
   font-size: 16pt;
 }
-
 .address:before {
   content: "mailto: "attr(data-email-local);
 }
 .address:after {
   content: attr(data-email-domain);
 }
-
+footer {
+  padding:30px 0 30px;
+  clear:both;
+}
