@@ -63,8 +63,10 @@ div#modal div.container p.article {
   overflow-x: hidden;
 }
 div#modal div.container div.header{
-  /*border-bottom:1px solid #ddd;*/
   text-align:right;
   padding:4px;
-
+}
+div#modal div.container div.footer {
+  border-top:1px solid #ddd;
+  padding:20px 0 ;
 }

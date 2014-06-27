@@ -3,3 +3,4 @@ markdown: redcarpet
 pygments: true
 baseurl: /sig-slud
 permalink: none
+paginate: 6
