@@ -67,6 +67,7 @@ nav ul {
   margin: 1px 6px 12px 0;
   padding: 0 0 0 16px;
 }
+/*
 nav ul ul {
   display:none;
   left:20px;
@@ -74,6 +75,7 @@ nav ul ul {
   padding:4px;
   width:220px;
 }
+*/
 nav ul li:hover ul {
   visibility: visible;
 }
