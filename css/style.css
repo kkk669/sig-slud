@@ -63,19 +63,21 @@ nav ul ul {
   font-size:1.6em;
 }
 nav {
-  padding: 40px 0 0 0;
+  padding-top:40px;
+  font-size:1.2em;
 }
 .top-menu {
   display: table;
   list-style: none;
-  padding-left:40px;
+  padding-left:30px;
   position: relative;
   top: 10px;
+  margin:0;
 }
 .top-menu .menu-items {
-  width: 84px;
   display:table-cell;
   position: relative;
+  padding: 4px 8px;
 }
 .clearfix:after{
   clear:both;
