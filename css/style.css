@@ -10,7 +10,6 @@ body {
   min-height:100%;
   margin:0;
   padding: 0;
-  background-color:#EAF4FC;
 }
 .content-wrapper {
   width: 1090px;
@@ -61,8 +60,11 @@ nav ul ul {
 }
 .head h2 {
   float: left;
+  font-size:1.6em;
 }
-nav,
+nav {
+  padding: 40px 0 0 0;
+}
 .top-menu {
   display: table;
   list-style: none;
@@ -114,12 +116,14 @@ nav ul li:hover ul {
   margin: 0px 5px;
   padding:3px;
   border-radius:20px 20px 10px 10px;
-  background: #BBC8E6;
+  background: #0e5276;
   border: 1px solid #d7d7ee;
 }
 .box-header {
   padding-left: 8px;;
-  font-size:16px;
+  font-size:1.2em;
+  font-weight:600;
+  color: white;
 }
 .box-content {
   border-radius:8px;
