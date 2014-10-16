@@ -4,44 +4,57 @@ body {
   font-family: 'Lucida Grande','Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;
   margin:0;
   padding:0;
-  background-color: #fafafa;
 }
-/*
+.content {
+  min-width:1140px;
+  min-height:100%;
+  margin:0;
+  padding: 0;
+  background-color:#EAF4FC;
+}
+.content-wrapper {
+  width: 1090px;
+  margin: 0 auto;
+}
 a,
 a:link,
-a:visited,
-a:hover,
-a:active {
+a:visited {
   color: #002200;
   text-decoration:none;
 }
-ul li a:link,
-ul li a:visited {
-  color:#39b;
-  text-decoration:none;
-}
-*/
 ul li a {
   color:#39b;
   text-decoration:none;
 }
-ul li a:hover,
-ul li a:active {
-   text-decoration: underline;
-   -moz-text-decoration: underline;
-   text-decoration-color: red;
+ul li a:hover {
+  width: 150%;
+  left: 0;
+  bottom: 1px;
+  border-width:0 0 1px;
+  border-style:solid;
+  border-color:red;
 }
+
 ul.sub-menu {
   display:none;
   visibility:hidden;
 }
-ul.top-menu li:hover > ul.sub-menu {
+ul li:hover > ul {
   display:block;
   visibility: visible;
-  width: 200px;
+  width: 230px;
   position: absolute;
-  left: -50px;
+  left: -20px;
   top: 30px;
+}
+nav ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+nav ul ul {
+  background-color: #D6E9CA;
+  border-radius:8px;
 }
 .head {
   padding-top:25px;
@@ -49,14 +62,16 @@ ul.top-menu li:hover > ul.sub-menu {
 .head h2 {
   float: left;
 }
+nav,
 .top-menu {
+  display: table;
   list-style: none;
+  padding-left:40px;
   position: relative;
   top: 10px;
-  display: table;
 }
 .top-menu .menu-items {
-  width: 70px;
+  width: 84px;
   display:table-cell;
   position: relative;
 }
@@ -68,23 +83,7 @@ hr {
   height: 0;
   margin: 8px 0 20px;
   border-top: 1px solid #eee;
-}
-.content {
-  min-width:1140px;
-  margin:0;
-  padding: 0;
-}
-section, footer {
-  width: 1090px;
-  margin: 0 auto;
-}
-.sidenav {
-  width: 276px;
-  float: left;
-}
-
-.main, #schedule{
-  margin-left:286px;
+  clear: both;
 }
 nav ul li > a {
   width: 120px;
@@ -99,47 +98,40 @@ nav ul {
   margin: 1px 6px 12px 0;
   padding: 0 0 0 16px;
 }
-/*
-nav ul ul {
-  display:none;
-  left:20px;
-  margin:0;
-  padding:4px;
-  width:220px;
+nav ul li ul {
+  transition-duration: visibility 2s ease-out 0.5s;
 }
-*/
 nav ul li:hover ul {
   visibility: visible;
 }
 .navlist {
   position: relative;
 }
-.fa {
-  float: right;
+.menu-right-angle {
+  margin-top:4px;
 }
-
 .box {
   margin: 0px 5px;
   padding:3px;
-  border-radius:8px;
-  background: #e8e8ee;
+  border-radius:20px 20px 10px 10px;
+  background: #BBC8E6;
   border: 1px solid #d7d7ee;
 }
 .box-header {
   padding-left: 8px;;
-  font-size:18px;
+  font-size:16px;
 }
 .box-content {
   border-radius:8px;
   background: #fafafa;
   margin:0;
   padding: 8px;
-  
 }
 p {
   margin:8px 0;
 }
 
+.award,
 #schedule {
   margin-top:20px;
 }
@@ -195,16 +187,6 @@ dd {
   font-family: "FontAwesome";
   content: "\f0da";
   padding-left:5px;
-}
-.address {
-  margin:16px 0 0 0px;
-  font-size: 16pt;
-}
-.address:before {
-  content: "mailto: "attr(data-email-local);
-}
-.address:after {
-  content: attr(data-email-domain);
 }
 footer {
   padding:30px 0 30px;
