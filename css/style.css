@@ -37,6 +37,8 @@ ul.sub-menu {
   display:none;
   visibility:hidden;
   z-index:999;
+  padding: 0 4px 0 4px;
+  margin:0;
 }
 ul li:hover > ul {
   display:block;
@@ -52,8 +54,9 @@ nav ul:after {
   clear: both;
 }
 nav ul ul {
-  background-color: #D6E9CA;
-  border-radius:8px;
+  background-color: #f1f1f1;
+  border-radius:5px;
+  border: 1px solid #ddd;
 }
 .head {
   padding-top:25px;
@@ -64,7 +67,7 @@ nav ul ul {
 }
 nav {
   padding-top:40px;
-  font-size:1.2em;
+  font-size:16px;
 }
 .top-menu {
   display: table;
@@ -207,7 +210,7 @@ nav ul li:hover ul {
   padding: 2px 0 2px 12px;
 }
 .program {
-  width:650px;
+  width:630px;
   float:left;
   background-color:white;
   padding:15px 0 15px 8px;
@@ -227,6 +230,7 @@ nav ul li:hover ul {
   width:138px;
   height:90px;
   line-height:90px;
+  padding:0 10px;
 }
 .clearfix:after {
   content: "";
