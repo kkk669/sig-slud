@@ -23,26 +23,37 @@ title: JSAI SIG-SLUD 言語・音声理解と対話処理研究会 - 人工知�
       {% assign tmp2 = last_year    | minus:1 | plus: 1 %}
       {% if tmp1 != tmp2 %}
           {% if tmp2 != 0 %}
+          <!--
             </ul>
           </div>
+          -->
           {% endif %}
-          <div class="accordion open"><span class="fy">{{ current_year }} 年度研究会</span>
-            <ul class="clearfix">
+          <!--
+          <div class="accordion open">
+          -->
+            <span class="year">{{ current_year }} 年度研究会</span>
       {% endif %}
-              <li>
-                <div class="state">{{ post.state }}</div>
-                <div >
-                  <span><a class="modal" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></span>
-                  <dl>
-                    <dt class="date">{{ post.time }}</dt>
-                    <dd>{{ post.place }}</dd>
-                  </dl>
+            <div class="box-conent box-frame">
+              <div class="date">{{ post.time }}</div>
+              <div class="program">
+                <div class="program-title">
+                  <a class="modal" href="{{ site.baseurl }}{{ post.url }}">
+                    <span>{{ post.title }}</span>
+                  </a>
                 </div>
-              </li>
+                <div class="location">
+                  <span>{{ post.place }}</span>
+                </div>
+              </div>
+              <div class="state">{{ post.state }}</div>
+              <div class="clearfix"></div>
+            </div> <!-- box-frame -->
       {% assign last_year = current_year %}
     {% endfor %}
+            <!--
             </ul>
           </div>
+            -->
           <a href="#" class="next-page">
             <button class="btn btn-s">
               続きを見る
