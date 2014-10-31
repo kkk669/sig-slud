@@ -61,6 +61,7 @@ div#modal div.container p.article {
   border: 0;
   background-color: #fbfbfb;
   overflow-x: hidden;
+  word-wrap: break-word;
 }
 div#modal div.container div.header{
   text-align:right;
