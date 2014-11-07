@@ -121,7 +121,9 @@ nav ul li:hover ul {
   margin-bottom: 50px;
 }
 .box-header {
+  /*
   background: #0e5276;
+  */
   position: relative;
   font-size:1.2em;
   font-weight:600;
@@ -137,54 +139,40 @@ nav ul li:hover ul {
   left: 30px;
   border-width: 20px 0 0 20px;
   border-style: solid;
+  /*
   border-color: #0e5276 transparent;
+  */
   display:block;
   width: 0;
 }
-/*
-.box-header {
-  position: relative;
-  padding: 15px 15px 15px 18px;
-  margin: 1em 0 2em;
-  background-color:#0e5276;
-  background:-webkit-gradient(linear, 0 0,0 100%,from(#366693), to(#0e5276));
-  background:-moz-linear-gradient(#366693, #0e5276);
-  background:-o-linear-gradient(#366693, #0e5276);
-  background:linear-gradient(#366693,#0e5276);
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius:8px;
-  font-size:1.2em;
-  font-weight:600;
-  color: white;
+.box-header-color-blue {
+  background: #0e5276;
 }
-.box-header:before {
+.box-header-color-blue:after {
   content: "";
-  position: absolute;
-  bottom: -20px;
-  left: 60px;
-  border: 0;
-  border-right-width: 30px;
-  border-bottom-width: 20px;
-  border-style: solid;
-  border-color:transparent #0e5276;
-  display:block;
-  width:0;
+  border-color: #0e5276 transparent;
 }
-.box-header:after {
+.box-header-color-green {
+  background: green;
+}
+.box-header-color-green:after {
   content: "";
-  position: absolute;
-  bottom: -20px;
-  left: 80px;
-  border: 0;
-  border-right-width: 10px;
-  border-bottom-width: 20px;
-  border-style:solid;
-  border-color: transparent #fff;
-  display:block;
-  width:0;
+  border-color: green transparent;
 }
-*/
+.box-header-color-purple {
+  background: #421C52;
+}
+.box-header-color-purple:after {
+  content: "";
+  border-color: #421C52 transparent;
+}
+.box-header-color-red {
+  background: #7F1917;
+}
+.box-header-color-red:after {
+  content: "";
+  border-color: #7F1917 transparent;
+}
   
 .box-content {
   margin-left:10px;
@@ -272,6 +260,15 @@ a.close {
 p {
   font-size: 16px;
 }
-.color-green {
-  background-color:green;
+.faq {
+  border-bottom: 1px solid;
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+}
+.question {
+  font-weight:600;
+  margin: 6px 0;
+}
+.answer p {
+  margin: 2px 0 0 12px;
 }
