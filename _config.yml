@@ -1,6 +1,6 @@
 name: sig-slud
 markdown: redcarpet
-pygments: true
+highlighter: pygments
 baseurl: /sig-slud
 permalink: none
 paginate: 6
