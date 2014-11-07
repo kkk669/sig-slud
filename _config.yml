@@ -3,5 +3,4 @@ markdown: redcarpet
 highlighter: pygments
 baseurl: /sig-slud
 permalink: none
-paginate: 3
-pagenate_path: "events:num"
+paginate: 6
