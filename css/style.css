@@ -272,3 +272,6 @@ p {
 .answer p {
   margin: 2px 0 0 12px;
 }
+.header-title {
+  font-style:bold;
+}
