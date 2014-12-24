@@ -3,6 +3,5 @@ markdown: redcarpet
 highlighter: pygments
 baseurl: /sig-slud
 permalink: none
-#paginate: 6
 paginate: 6
 paginate_path: ":6"

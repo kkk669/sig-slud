@@ -26,10 +26,6 @@ ul li a {
   text-decoration:none;
 }
 ul li a:hover {
-  /*
-  width: 150%;
-  left: 0;
-  */
   bottom: 1px;
   border-width:0 0 1px;
   border-style:solid;
@@ -123,9 +119,6 @@ nav ul li:hover ul {
   margin-bottom: 50px;
 }
 .box-header {
-  /*
-  background: #0e5276;
-  */
   position: relative;
   font-size:1.2em;
   font-weight:600;
@@ -141,9 +134,6 @@ nav ul li:hover ul {
   left: 30px;
   border-width: 20px 0 0 20px;
   border-style: solid;
-  /*
-  border-color: #0e5276 transparent;
-  */
   display:block;
   width: 0;
 }

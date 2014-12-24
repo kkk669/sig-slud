@@ -22,41 +22,28 @@ title: JSAI SIG-SLUD 言語・音声理解と対話処理研究会 - 人工知�
       {% assign tmp1 = current_year | minus:1 | plus: 1 %}
       {% assign tmp2 = last_year    | minus:1 | plus: 1 %}
       {% if tmp1 != tmp2 %}
-          {% if tmp2 != 0 %}
-          <!--
-            </ul>
-          </div>
-          -->
-          {% endif %}
-          <!--
-          <div class="accordion open">
-          -->
-            <span class="year">{{ current_year }} 年度研究会</span>
+        <span class="year">{{ current_year }} 年度研究会</span>
       {% endif %}
-            <div class="box-conent box-frame">
-              <div class="date">{{ post.time }}</div>
-              <div class="program">
-                <div class="program-title">
-                  <a class="modal" href="{{ site.baseurl }}{{ post.url }}">
-                    <span>{{ post.title }}</span>
-                  </a>
-                </div>
-                <div class="location">
-                  <span>{{ post.place }}</span>
-                </div>
-              </div>
-              <div class="state">{{ post.state }}</div>
-              <div class="clearfix"></div>
-            </div> <!-- box-frame -->
+        <div class="box-conent box-frame">
+          <div class="date">{{ post.time }}</div>
+          <div class="program">
+            <div class="program-title">
+              <a class="modal" href="{{ site.baseurl }}{{ post.url }}">
+                <span>{{ post.title }}</span>
+              </a>
+            </div>
+            <div class="location">
+              <span>{{ post.place }}</span>
+            </div>
+          </div>
+          <div class="state">{{ post.state }}</div>
+          <div class="clearfix"></div>
+        </div> <!-- box-frame -->
       {% assign last_year = current_year %}
     {% endfor %}
-            <!--
-            </ul>
-          </div>
-            -->
-            <a class="next-page" href="{{ site.baseurl }}/events">
-              <button class="btn btn-s">続きを見る</button>
-            </a>
+        <a class="next-page" href="{{ site.baseurl }}/events">
+          <button class="btn btn-s">続きを見る</button>
+        </a>
     </div><!-- box-content -->
   </div><!-- box -->
 </div> <!-- schedule -->
