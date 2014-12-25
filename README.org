@@ -10,7 +10,7 @@
 ** インストール方法
 github からもろもろをダウンロードします．
 
-その後，~jekyll build~ すると _site 以下に html ファイルが作成されます．
+その後， ~jekyll build~ すると _site 以下に html ファイルが作成されます．
 
 最後に，html ファイルなど全て，ドキュメントルートへコピーします． ( =/usr/local/www/apacheXX/data/= 以下とか )
 
@@ -42,7 +42,7 @@ github からもろもろをダウンロードします．
 : ここに本文を書く．
 : ```
 
-以上の作業が終わったら，~jekyll build~ して，_site 以下の html ファイルなどをドキュメントルートへコピーします．
+以上の作業が終わったら， ~jekyll build~ して，_site 以下の html ファイルなどをドキュメントルートへコピーします．
 
 ** _config.yml について
 _config.yml には，ちょっとした設定が書いてあります．
