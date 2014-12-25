@@ -20,7 +20,7 @@ $ cp -r _site/* /path/to/document_root
 ```
 
 
-## 追加・編集
+## スケジュールの追加・編集
 スケジュール関連は \_post 以下に置いてあります．
 
 ファイル名を YYYY-MM-dd-タイトル.md のようにします． 例えば，2014-12-25-Christmas.md のように．
@@ -31,8 +31,8 @@ $ cp -r _site/* /path/to/document_root
 ```2014-12-25-Christmas.md
 ---
 layout: post
-title: "クリスマス"
-place: "お家"
+title: "第XX回研究会 クリスマス特別編"
+place: "○○大学"
 time:  "2014年12月25日(木)"
 state: "未定"
 ---
