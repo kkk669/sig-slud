@@ -264,3 +264,16 @@ p {
 .header-title {
   font-style:bold;
 }
+.address {
+  list-style:none;
+  margin-left:12px;
+}
+.address:before {
+  content: attr(data-email-name)"\0040";
+}
+.address:after {
+  content: attr(data-email-domain);
+}
+.member-list ul li {
+  width: 500px;
+}
