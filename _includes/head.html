@@ -49,46 +49,80 @@
               <nav>
                 <ul class="top-menu">
                   <li class="menu-items ">
-                    <a href="{{ site.baseurl }}/">Top <i class="menu-right-angle fa fa-angle-double-right"></i></a>
-                    <ul class="sub-menu">
-                      <li><a href="#about">研究会案内</a></li>
-                      <li><a href="#schedule">研究会・イベント開催予定</a></li>
-                      <li><a href="#award">受賞者一覧</a></li>
-                    </ul>
+                    <a href="{{ site.baseurl }}/">Top</a>
                   </li>
-                  <li class="menu-items ">
-                    <a href="#">Events <i class="menu-right-angle fa fa-angle-double-right"></i></a>
-                    <ul class="sub-menu">
-                      <li><a href="{{ site.baseurl }}/events/join.html">研究発表会への参加</a></li>
-                      <li><a href="{{ site.baseurl }}/events/index.html">スケジュール一覧</a></li>
-                    </ul>
+                  <li class="menu-items minibutton ">
+                    <a class="select-menu-button" href="#">Events <i class="menu-right-angle select-menu-button fa fa-caret-down"></i></a>
+                    <div class="select-menu-modal-holder">
+                      <div class="select-menu-modal" aria-hidden="true">
+                        <div class="select-menu-modal-list">
+                          <a class="select-menu-modal-item" href="{{ site.baseurl }}/events/join.html">
+                            <span class="select-menu-item-heading">研究発表会への参加</span>
+                          </a>
+                          <a class="select-menu-modal-item" href="{{ site.baseurl }}/events/index.html">
+                            <span class="select-menu-item-heading">スケジュール一覧</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </li>
-                  <li class="menu-items ">
-                    <a href="#">Reports <i class="menu-right-angle fa fa-angle-double-right"></i></a>
-                    <ul class="sub-menu">
-                      <li><a href="#">研究報告 </a></li>
-                    </ul>
+                  <li class="menu-items minibutton ">
+                    <a class="select-menu-button" href="#">Reports <i class="menu-right-angle select-menu-button fa fa-caret-down"></i></a>
+                    <div class="select-menu-modal-holder">
+                      <div class="select-menu-modal" aria-hidden="true">
+                        <div class="select-menu-modal-list">
+                          <a class="select-menu-modal-item">
+                            <span class="select-menu-item-heading">研究報告</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </li>
-                  <li class="menu-items ">
-                    <a href="#">Archive <i class="menu-right-angle fa fa-angle-double-right"></i></a>
-                    <ul class="sub-menu">
-                      <li><a href="{{ site.baseurl }}/archive/Winner.html">受賞者一覧</a></li>
-                      <li><a href="{{ site.baseurl }}/archive/confreport.html">会議参加報告</a></li>
-                      <li><a href="#">以前の活動履歴</a></li>
-                      <li><a href="//www.lai.kyutech.ac.jp/sig-slud/home.html">旧 SIG-SLUD Web サイト</a></li>
-                    </ul>
+                  <li class="menu-items minibutton ">
+                    <a class="select-menu-button" href="#">Archive <i class="menu-right-angle select-menu-button fa fa-caret-down"></i></a>
+                    <div class="select-menu-modal-holder">
+                      <div class="select-menu-modal" aria-hidden="true">
+                        <div class="select-menu-modal-list">
+                          <a class="select-menu-modal-item" href="{{ site.baseurl }}/archive/Winner.html">
+                            <span class="select-menu-item-heading">受賞者一覧</span>
+                          </a>
+                          <a class="select-menu-modal-item" href="{{ site.baseurl }}/archive/confreport.html">
+                            <span class="select-menu-item-heading">会議参加報告</span>
+                          </a>
+                      <!--
+                          <a class="select-menu-modal-item" href="#">
+                            <span class="select-menu-item-heading">以前の活動履歴</span>
+                          </a>
+                          <a class="select-menu-modal-item">
+                              <a href="//www.lai.kyutech.ac.jp/sig-slud/home.html">旧 SIG-SLUD Web サイト</a></span>
+                          </a>
+                      -->
+                        </div>
+                      </div>
+                    </div>
                   </li>
-                  <li class="menu-items ">
-                    <a href="#">About <i class="menu-right-angle fa fa-angle-double-right"></i></a>
-                    <ul class="sub-menu">
-                      <li><a href="{{ site.baseurl }}/about/join.html">研究会に参加したい</a></li>
-                      <li><a href="{{ site.baseurl }}/about/committee.html">研究会運営委員一覧</a></li>
-                      <li><a href="{{ site.baseurl }}/about/faq.html">問い合わせ</a></li>
-                      <li><a href="{{ site.baseurl }}/about/field.html">主要な研究分野</a></li>
-                    </ul>
+                  <li class="menu-items minibutton ">
+                    <a class="select-menu-button" href="#">About <i class="menu-right-angle select-menu-button fa fa-caret-down"></i></a>
+                    <div class="select-menu-modal-holder">
+                      <div class="select-menu-modal" aria-hidden="true">
+                        <div class="select-menu-modal-list">
+                          <a class="select-menu-modal-item" href="{{ site.baseurl }}/about/join.html">
+                            <span class="select-menu-item-heading">研究会に参加したい</span>
+                          </a>
+                          <a class="select-menu-modal-item" href="{{ site.baseurl }}/about/committee.html">
+                            <span class="select-menu-item-heading">研究会運営委員一覧</span>
+                          </a>
+                          <a class="select-menu-modal-item" href="{{ site.baseurl }}/about/faq.html">
+                            <span class="select-menu-item-heading">問い合わせ</span>
+                          </a>
+                          <a class="select-menu-modal-item" href="{{ site.baseurl }}/about/field.html">
+                            <span class="select-menu-item-heading">主要な研究分野</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </li>
-                  <li class="menu-items "><a href="#">Login</a></li>
-                  <li class="menu-items ">
+                  <li class="menu-items minibutton ">
                     <a href="https://twitter.com/sigslud"><span class="drawic drawic-twitter"></span></a>
                   </li>
                 </ul>

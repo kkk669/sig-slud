@@ -25,6 +25,13 @@ ul li a {
   color:#39b;
   text-decoration:none;
 }
+a:hover.schedule-link {
+  bottom:1px;
+  border-width:0 0 1px;
+  border-style:solid;
+  border-color: red;
+}
+/*
 ul li a:hover {
   bottom: 1px;
   border-width:0 0 1px;
@@ -38,6 +45,7 @@ ul.sub-menu {
   padding: 0 4px 0 4px;
   margin:0;
 }
+*/
 ul li:hover > ul {
   display:block;
   visibility: visible;
@@ -74,6 +82,13 @@ nav {
   position: relative;
   top: 10px;
   margin:0;
+  border-spacing: 8px 0;
+  border-collapse: separate;
+  float:right;
+}
+.top-menu:after {
+  content: "";
+  clear: right;
 }
 .top-menu .menu-items {
   display:table-cell;
@@ -276,4 +291,42 @@ p {
 }
 .member-list ul li {
   width: 500px;
+}
+div[aria-hidden="true"]{
+  display:none;
+}
+.select-menu-button {
+  position: relative;
+}
+.select-menu-modal-holder {
+  width: 212px;
+  position: absolute;
+  top: 40px;
+  left:0;
+  z-index:100;
+}
+.select-menu-modal-list {
+  background:#eee;
+}
+.select-menu-modal-item {
+  display: block;
+  border-bottom: 1px solid #ddd;
+  padding:8px;
+}
+.select-menu-item-heading {
+}
+.menu-items {
+  background: #eee;
+  border: 1px solid #ddd;
+  border-radius:5px;
+  padding:10px 0;
+}
+.select-menu-modal-menu {
+}
+li.menu-items:hover {
+  background:#e0e0e0;
+}
+.btnPressed {
+  box-shadow:0 3px rgba(0,0,0,0.2) inset;
+  background: #d0d0d0;
 }
