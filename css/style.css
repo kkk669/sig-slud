@@ -281,7 +281,7 @@ p {
 }
 .desc{
   list-style:none;
-  margin:4px 0 0 12px;
+  margin:0 0 0 1em;
 }
 .address:before {
   content: attr(data-email-name)"\0040";
@@ -291,6 +291,10 @@ p {
 }
 .member-list ul li {
   width: 500px;
+  list-style:none;
+}
+.member-list ul li:not(:first-child) {
+  margin-top:12px;
 }
 div[aria-hidden="true"]{
   display:none;
