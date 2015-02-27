@@ -11,7 +11,8 @@ function openSubMenu() {
 
   $(".top-menu").on('click','li.minibutton',function(event) {
   //$("li.minibutton").click(function(event) {
-    if (event.target.className === 'select-menu-item-heading' || event.target.className === 'select-menu-modal-item') return;
+    if (event.target.className === 'select-menu-item-heading' || event.target.className === 'select-menu-modal-item')
+      return;
     event.preventDefault();
     var ariaHidden = $(this).children("div").children("div").attr("aria-hidden");
     //alert(ariaHidden);

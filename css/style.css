@@ -279,9 +279,9 @@ p {
 .header-title {
   font-style:bold;
 }
-.address {
+.desc{
   list-style:none;
-  margin-left:12px;
+  margin:4px 0 0 12px;
 }
 .address:before {
   content: attr(data-email-name)"\0040";
