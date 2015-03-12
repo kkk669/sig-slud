@@ -90,7 +90,7 @@ nav {
   content: "";
   clear: right;
 }
-.top-menu .menu-items {
+.top-menu .minibutton {
   display:table-cell;
   position: relative;
   padding: 4px 8px;
@@ -129,6 +129,9 @@ nav ul li:hover ul {
 }
 .menu-right-angle {
   margin-top:4px;
+  position: absolute;
+  top:0;
+  left:110%;
 }
 .box {
   margin-bottom: 50px;
@@ -323,7 +326,6 @@ div[aria-hidden="true"]{
   background: #eee;
   border: 1px solid #ddd;
   border-radius:5px;
-  padding:10px 0;
 }
 .select-menu-modal-menu {
 }
