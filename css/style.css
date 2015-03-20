@@ -307,6 +307,10 @@ div[aria-hidden="true"]{
 .select-menu-button {
   position: relative;
 }
+.select-menu-button:after {
+  font-family: "FontAwesome";
+  content: "\f0d7";
+}
 .select-menu-modal-holder {
   width: 212px;
   position: absolute;
@@ -332,9 +336,12 @@ div[aria-hidden="true"]{
 .select-menu-modal-menu {
 }
 li.menu-items:hover {
-  background:#e0e0e0;
+  background:#e7e7e7;
 }
 .btnPressed {
-  box-shadow:0 3px rgba(0,0,0,0.2) inset;
-  background: #d0d0d0;
+  box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.3) inset;
+  background: #dedede;
+}
+.btnPressed:hover {
+  background: #dedede !important;
 }
