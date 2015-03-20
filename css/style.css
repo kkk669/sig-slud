@@ -129,6 +129,11 @@ nav ul li:hover ul {
 }
 .menu-right-angle {
   margin-top:4px;
+  /*
+  position: absolute;
+  top:0;
+  left:110%;
+  */
 }
 .box {
   margin-bottom: 50px;
@@ -302,6 +307,10 @@ div[aria-hidden="true"]{
 .select-menu-button {
   position: relative;
 }
+.select-menu-button:after {
+  font-family: "FontAwesome";
+  content: "\f0d7";
+}
 .select-menu-modal-holder {
   width: 212px;
   position: absolute;
@@ -323,14 +332,16 @@ div[aria-hidden="true"]{
   background: #eee;
   border: 1px solid #ddd;
   border-radius:5px;
-  padding:10px 0;
 }
 .select-menu-modal-menu {
 }
 li.menu-items:hover {
-  background:#e0e0e0;
+  background:#e7e7e7;
 }
 .btnPressed {
-  box-shadow:0 3px rgba(0,0,0,0.2) inset;
-  background: #d0d0d0;
+  box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.3) inset;
+  background: #dedede;
+}
+.btnPressed:hover {
+  background: #dedede !important;
 }
